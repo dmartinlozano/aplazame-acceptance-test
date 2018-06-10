@@ -1,0 +1,58 @@
+default:
+
+  time:
+    timeout_default: 200000
+    wait_elements: 190000
+    wait_error: 6000
+    wait_simulation: 1000
+    page:
+      wait: 9000
+
+  homePage:
+    url: https://demo.aplazame.com/
+    labelSelected: rgba(38, 123, 189, 1)
+    unboxedLabelXpath: /html/body/div/section[1]/article/form/div[3]/label[1]
+    retailLabelXpath: /html/body/div/section[1]/article/form/div[3]/label[2]
+    setLabelXpath: /html/body/div/section[1]/article/form/div[3]/label[3]
+    priceDivXpath: /html/body/div/section[1]/article/form/div[2]/div[3]
+    showInfoIframeXpath: /html/body/div/section[1]/article/form/div[4]/div/iframe
+    showInfoDivXpath: /html/body/div/div/div/div[2]
+    payButtonXpath: /html/body/div/div[2]/button
+    minusButtonXpath: /html/body/div/section[1]/article/form/div[2]/div[1]/button[1]
+    qtyInputXpath: /html/body/div/section[1]/article/form/div[2]/div[1]/input
+    plusButtonXpath: /html/body/div/section[1]/article/form/div[2]/div[1]/button[2]
+    feePaymentIFrameXpath: /html/body/iframe
+    feePaymentModal:
+      xpath: /html/body/div/div/div
+      twelveMonthsFeePaymentSpanXpath: /html/body/div/div/div/div[1]/div/button[12]/div/div[2]/span[1]
+      backButtonXpath: /html/body/div/div/div/div[2]/div[1]/button
+      customersHrefXpath: /html/body/div/div/div/div[2]/div[2]/a
+
+  orderPage:
+    url: https://demo.aplazame.com/#/order/test-
+    parentIframeXpath: //*[@id="aplazame-checkout-iframe"]
+    modalXpath: /html/body/div[1]/div/div[2]
+    instalmentButtonXpath: /html/body/div[1]/div/div[2]/section[1]/div/div/div/div/span[2]
+    payDayButtonXpath: /html/body/div[1]/div/div[2]/section[1]/div/div/div/div/span[4]/span
+    totalSpanXpath: /html/body/div[1]/div/div[2]/section[2]/div/div[2]/dl[5]/dt/span
+    continueButtonXpath: /html/body/div[1]/div/div[2]/section[4]/button
+    backHomeButtonXpath: /html/body/div[1]/div[1]/div[1]/div
+    personalInfo:
+      nifInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[1]/ng-form/div[1]/div/div/div[2]/div[2]/div[1]/label[1]/input
+      mobileInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[1]/ng-form/div[1]/div/div/div[2]/div[2]/div[1]/label[2]/input
+      birthdateInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[1]/ng-form/div[1]/div/div/div[2]/div[2]/div[3]/label/input
+      addressInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[1]/ng-form/div[2]/div[2]/div/div[2]/div[1]/label/input
+      floorInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[1]/ng-form/div[2]/div[2]/div/div[2]/div[3]/label/input
+      iReadPrivacyPolicyInputXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[2]/ng-form/div[2]/div/div[2]/div/div[2]/div/label
+      creditCardListXpath: /html/body/div[1]/div/div[2]/form/div[1]/div[1]/section[3]/div/div[2]/div/ng-form/div/div[2]
+    smsInputXpath: /html/body/div[1]/div/div[2]/section[3]/div/div[2]/div/form/input[1]
+    smsSandBoxSpanXpath: /html/body/div[1]/div/div[2]/section[3]/div/div[2]/div/div[3]/span[2]
+    conditionsInstalmentsModal:
+      xpath: /html/body/div[1]/div[2]/div[2]
+      fourMonthsSpanXpath: /html/body/div[1]/div[2]/div[2]/div/div[4]
+    payDayModal:
+      xpath: /html/body/div[1]/div[2]/div[2]
+      day18DivXpath: /html/body/div[1]/div[2]/div[2]/div/div[18]
+    resultPaymentModal:
+      xpath: /html/body/div[1]/div[2]/div[2]
+      textDivXpath: /html/body/div[1]/div[2]/div[2]/div[1]

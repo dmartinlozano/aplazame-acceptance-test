@@ -1,0 +1,46 @@
+{
+  "name": "aplazame-acceptance-test",
+  "version": "0.0.1",
+  "engines": {
+    "node": "9.5.0",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "clean": "rm -rf reports && mkdir -p reports && touch reports/cucumber-report.json",
+    "test": "npm run clean && ./node_modules/cucumber/bin/cucumber-js -f json:reports/cucumber-report.json --require-module babel-core/register --require-module babel-polyfill",
+    "report": "node report.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.247.1",
+    "bluebird": "3.5.1",
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "chromedriver": "2.36.0",
+    "cucumber": "4.2.1",
+    "cucumber-html-reporter": "^4.0.2",
+    "cucumber-junit": "1.7.1",
+    "edgedriver": "^4.17134.0",
+    "geckodriver": "1.11.0",
+    "html2plaintext": "2.0.1",
+    "iedriver": "3.9.2",
+    "inquirer": "5.1.0",
+    "jwt-simple": "^0.5.1",
+    "mailparser": "2.2.0",
+    "moment": "2.21.0",
+    "node-yaml-config": "0.0.4",
+    "operadriver": "1.0.0",
+    "request": "^2.87.0",
+    "require-dir": "0.3.2",
+    "sanitize-filename": "1.6.1",
+    "selenium-webdriver": "4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-builtin-extend": "1.1.2",
+    "babel-plugin-transform-es2015-modules-umd": "6.24.1",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "6.24.1"
+  }
+}
